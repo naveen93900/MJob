@@ -39,27 +39,27 @@ Welcome to **Job App**, a modern job marketplace platform where users can find j
    ```bash
    git clone https://github.com/naveen93900/MJob.git
    cd MJob
-Install dependencies:
+## Install dependencies:
 
 
 npm install
 
 npm install react-router-dom
 
-# 
 
 
-Start the backend JSON server:
+
+ ## Start the backend JSON server:
 
 "npx json-server --watch api.json --port 5000"
 
 
-Start the React development server:
+## Start the React development server:
 
 "npm start"
 
 
-Project Structure
+### Project Structure
 
 
 /my-app
@@ -81,7 +81,8 @@ Project Structure
 ├── api.json
 ├── package.json
 └── README.md
-API Endpoints
+
+# API Endpoints
 GET /jobs - Fetch list of jobs (supports query params like _limit)
 
 POST /users - Create new user (signup)
@@ -97,15 +98,15 @@ Explore Jobs: Browse the latest luxury jobs on the home page.
 
 Post Jobs: Share job opportunities to start earning based on views.
 
-About: Learn more about the platform and its unique features.
+# About: Learn more about the platform and its unique features.
 
 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the app.
 
-License
+# License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 For any questions or support, please contact:
 
 Your Name - venkatmallapuram123@gmail.com
