@@ -43,17 +43,21 @@ Install dependencies:
 
 
 npm install
-# or
-yarn install
+
+npm install react-router-dom
+
+# 
+
+
 Start the backend JSON server:
 
 "npx json-server --watch api.json --port 5000"
+
+
 Start the React development server:
 
 "npm start"
-# or
-yarn start
-Open http://localhost:3000 in your browser to see the app.
+
 
 Project Structure
 
