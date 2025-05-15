@@ -41,32 +41,23 @@ Welcome to **Job App**, a modern job marketplace platform where users can find j
    cd MJob
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 # or
 yarn install
 Start the backend JSON server:
 
-bash
-Copy
-Edit
-npx json-server --watch api.json --port 5000
+"npx json-server --watch api.json --port 5000"
 Start the React development server:
 
-bash
-Copy
-Edit
-npm start
+"npm start"
 # or
 yarn start
 Open http://localhost:3000 in your browser to see the app.
 
 Project Structure
-bash
-Copy
-Edit
+
+
 /my-app
 ├── /public
 ├── /src
