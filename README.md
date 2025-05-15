@@ -37,8 +37,8 @@ Welcome to **Job App**, a modern job marketplace platform where users can find j
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/job-app.git
-   cd job-app
+   git clone https://github.com/naveen93900/MJob.git
+   cd MJob
 Install dependencies:
 
 bash
