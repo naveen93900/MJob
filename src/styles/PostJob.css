@@ -1,0 +1,66 @@
+/* Container for the post job page */
+.post-job-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.post-job-form h2 {
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+}
+
+/* Form structure */
+.post-job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.post-job-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+/* Input and textarea styling */
+.post-job-form input,
+.post-job-form textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  resize: vertical;
+}
+
+.post-job-form input:focus,
+.post-job-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.post-job-form button {
+  margin-top: 2rem;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.post-job-form button:hover {
+  background-color: #0056b3;
+}

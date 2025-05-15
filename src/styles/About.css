@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #eef2ff, #f7faff);
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+  animation: fadeInPage 1.5s ease;
+}
+
+/* Content */
+.about-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 960px;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+/* Headings */
+.about-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: bounceFade 1s;
+}
+
+.about-content h2 {
+  font-size: 1.9rem;
+  color: #111827;
+  margin-top: 35px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-content h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #6366f1;
+  margin-top: 10px;
+  transition: width 0.4s ease;
+}
+
+.about-content h2:hover::after {
+  width: 120px;
+}
+
+/* Paragraphs */
+.about-content p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* List Items */
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.about-content ul li {
+  font-size: 1.05rem;
+  color: #334155;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-content ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Footer Note */
+.footer-note {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  animation: fadeIn 2s ease-in;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .about-content ul li,
+  .footer-note {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Wrapper */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Content Section */
+.home-content {
+  max-width: 600px;
+  margin-right: 40px;
+}
+
+.home-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: #f3f4f6;
+  color: #1e293b;
+  border: 1px solid #d1d5db;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #e5e7eb;
+  transform: translateY(-2px);
+}
+
+/* Image Section */
+.home-image img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .home-content {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .home-image img {
+    max-width: 80%;
+  }
+}

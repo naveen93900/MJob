@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Auth Page Wrapper */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Form Container Styling */
+.form-container {
+  background-color: #f9fafb;
+  padding: 48px 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Form */
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Form Structure */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Form Title */
+.form h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+/* Input Field Styling */
+.form input {
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #0ea5e9;
+  background-color: #f0f9ff;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.25);
+}
+
+/* Button Styling */
+.form button {
+  margin-top: 28px;
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+  transform: translateY(-2px);
+}
+
+/* Footer Note */
+.note {
+  font-size: 0.85rem;
+  color: #475569;
+  text-align: center;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 32px 24px;
+  }
+
+  .form h2 {
+    font-size: 1.6rem;
+  }
+}

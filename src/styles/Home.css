@@ -1,0 +1,121 @@
+/* Home.css */
+
+.lux-home-container {
+  background: linear-gradient(to right, #fefefe, #f7f9fc);
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lux-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.lux-title {
+  font-size: 3rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #283e51, #4b79a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lux-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+/* Job Grid */
+.lux-job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  animation: fadeInUp 1.2s ease-in;
+}
+
+/* Job Card */
+.lux-job-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.lux-job-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 140px;
+  width: 100%;
+  background-image: url('https://source.unsplash.com/featured/?office,job');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+}
+
+.lux-job-title {
+  margin-top: 160px;
+  padding: 0 20px 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.lux-company {
+  padding: 0 20px;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.lux-job-desc {
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.lux-btn {
+  margin: 0 20px;
+  background: linear-gradient(to right, #0f2027, #2c5364);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.lux-btn:hover {
+  background: linear-gradient(to right, #2c5364, #0f2027);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

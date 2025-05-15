@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "id": "2e43",
+      "company": "Infeneon",
+      "role": "Frontend Developer",
+      "experience": "f",
+      "skills": "React,HTML,CSS",
+      "qualification": "B.Tech",
+      "passoutYear": "2025",
+      "about": "Good in Frontend technologies and tailwand css",
+      "link": "https://in.indeed.com/q-latest-job-openings-l-bengaluru,-karnataka-jobs.html"
+    },
+    {
+      "id": "a42e",
+      "company": "IBM",
+      "role": "Backend Developer",
+      "experience": "Fresher",
+      "skills": "Java, Spring Boot",
+      "qualification": "MCA",
+      "passoutYear": "2024",
+      "about": "Good in Backend development and git",
+      "link": "https://ibmglobal.avature.net/en_US/careers/JobDetail?jobId=31774&source=WEB_Search_NA"
+    }
+  ],
+  "users": [
+    {
+      "id": "9559",
+      "name": "Venkat nav",
+      "email": "mvnaveen1947@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

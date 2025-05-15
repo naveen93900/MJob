@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Wrapper */
+.signup-container {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form Container */
+.signup-form {
+  background-color: #f9fafb;
+  padding: 48px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+.signup-form:hover {
+  transform: scale(1.01);
+}
+
+/* Form Structure */
+.signup-form h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+/* Label */
+.signup-form label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  display: block; /* Ensure label takes full width for alignment */
+}
+
+/* Input Fields */
+.signup-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  background: #ffffff;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px; /* Space between fields */
+}
+
+.signup-form input:focus {
+  border-color: #0ea5e9;
+  background: #f0f9ff;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.25);
+}
+
+/* Button */
+.signup-form button {
+  width: 100%; /* Make button full-width */
+  margin-top: 28px;
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(to right, #0284c7, #0369a1);
+  transform: translateY(-2px);
+}
+
+/* Login Link */
+.signup-form .login-text {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #475569;
+  margin-top: 16px;
+}
+
+.signup-form .login-text a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+.signup-form .login-text a:hover {
+  text-decoration: underline;
+}
